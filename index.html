@@ -7,9 +7,10 @@
   <title>Tailwind CSS - Tesla</title>
   <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="flex flex-col items-center h-screen bg-center bg-cover" style="background-image: url(img/m3.jpeg)">
-  <header class="flex justify-between fixed inset-0 h-[54px]">
-    <div class="flex items-center pl-[32px] w-[245px]">
+<body class="flex flex-col items-center h-screen bg-center bg-cover bg-no-repeat
+            portrait:bg-mobile-model-3 bg-model-3">
+  <header class="flex justify-between fixed inset-0 h-[60px] desktop:h-[54px]">
+    <div class="flex items-center pl-[8px] desktop:pl-[32px] w-[245px]">
       <a href="#" class="inline-block pr-[8px] pl-[16px]">
         <svg class="w-[120px] h-[30px]" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -18,7 +19,7 @@
         </svg>
       </a>
     </div>
-    <ul class="flex items-center text-[#181b21] px-[8px]">
+    <ul class="hidden desktop:flex items-center text-[#181b21] px-[8px]">
       <li>
         <a href="#" class="inline-block rounded-xl font-medium tracking-wider transition duration-500 flex justify-center items-center hover:bg-[#7396ad] hover:bg-opacity-40 text-[14px] py-[4px] px-[8px] h-[32px]">
           <span class="m-[8px]">
@@ -62,7 +63,7 @@
         </a>
       </li>
     </ul>
-    <ul class="flex items-center pr-[32px]">
+    <ul class="hidden desktop:flex items-center pr-[32px]">
       <li>
         <a href="#" class="inline-block rounded-xl font-medium tracking-wider transition duration-500 flex justify-center items-center hover:bg-[#7396ad] hover:bg-opacity-40 text-[14px] py-[4px] px-[8px] h-[32px]">
           <span class="m-[8px]">
@@ -85,24 +86,36 @@
         </a>
       </li>
     </ul>
+    <ul class="flex items-center desktop:hidden pr-[8px]">
+      <li>
+        <a href="#" class="inline-block rounded-xl font-medium tracking-wider transition duration-500 flex justify-center items-center bg-[#7396ad] bg-opacity-40 text-[12px] desktop:text-[14px] desktop:py-[4px] px-[8px] h-[28px]
+        desktop:h-[32px]">
+          <span class="mx-[8px]">
+            Menu
+          </span>
+        </a>
+      </li>
+    </ul>
   </header>
-  <div class="flex flex-col h-screen justify-between pt-[calc(13vh+20px)] pb-[55px]">
+  <div class="flex flex-col h-screen justify-between pt-[16vh] desktop:pt-[calc(13vh+20px)] pb-[120px] desktop:pb-[55px] w-full desktop:w-auto">
     <div class="text-center">
-      <h1 class="font-medium tracking-wider leading-[1.15] text-[#393c41] text-[42px] py-[4px]">
+      <h1 class="font-medium tracking-wide desktop:tracking-wider leading-[36px] desktop:leading-[1.15] text-[#393c41]
+      text-[36px] desktop:text-[42px] py-[4px]">
         Model 3
       </h1>
-      <h2 class="font-light tracking-wider text-[#5c5d61] text-[14px] pb-[8px]">
+      <h2 class="font-light tracking-wide desktop:tracking-wider text-[#5c5d61] text-[14px] pb-[8px]">
         Order Online for
         <a href="#" class="transition border-b hover:border-b-2 border-[#5c5d61] hover:border-[#181b21] hover:text-[#181b21]">
           Touchless Delivery
         </a>
       </h2>
     </div>
-    <div class="flex items-center space-x-[25px] my-[16px]">
-      <a href="#" class="inline-block rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-[256px] h-[40px]">
+    <div class="flex flex-col desktop:flex-row justify-center items-center desktop:space-x-[25px] space-y-[16px]
+                desktop:space-y-0 my-[16px] px-[20px] desktop:px-0">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-full desktop:w-[256px] h-[40px]">
         Custom Order
       </a>
-      <a href="#" class="inline-block rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-[256px] h-[40px]">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-full desktop:w-[256px] h-[40px]">
         Existing Inventory
       </a>
     </div>

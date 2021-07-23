@@ -635,12 +635,21 @@ video {
   margin-bottom: 16px;
 }
 
+.mx-\[8px\] {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-screen {
@@ -663,6 +672,14 @@ video {
   height: 40px;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[28px\] {
+  height: 28px;
+}
+
 .w-\[245px\] {
   width: 245px;
 }
@@ -673,6 +690,10 @@ video {
 
 .w-\[256px\] {
   width: 256px;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -697,6 +718,12 @@ video {
   margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-\[16px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(16px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(16px * var(--tw-space-y-reverse));
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -705,8 +732,8 @@ video {
   border-radius: 1rem;
 }
 
-.border {
-  border-width: 1px;
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-b {
@@ -728,12 +755,25 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-\[\#7396ad\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(115, 150, 173, var(--tw-bg-opacity));
+}
+
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
 
 .bg-opacity-\[65\%\] {
   --tw-bg-opacity: 65%;
+}
+
+.bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
+}
+
+.bg-model-3 {
+  background-image: url('/img/m3.jpeg');
 }
 
 .bg-cover {
@@ -744,6 +784,10 @@ video {
   background-position: center;
 }
 
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .px-\[8px\] {
   padding-left: 8px;
   padding-right: 8px;
@@ -752,6 +796,11 @@ video {
 .py-\[4px\] {
   padding-top: 4px;
   padding-bottom: 4px;
+}
+
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .pl-\[32px\] {
@@ -782,6 +831,18 @@ video {
   padding-bottom: 8px;
 }
 
+.pl-\[8px\] {
+  padding-left: 8px;
+}
+
+.pb-\[120px\] {
+  padding-bottom: 120px;
+}
+
+.pt-\[16vh\] {
+  padding-top: 16vh;
+}
+
 .text-center {
   text-align: center;
 }
@@ -796,6 +857,10 @@ video {
 
 .text-\[12px\] {
   font-size: 12px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .font-medium {
@@ -814,8 +879,16 @@ video {
   line-height: 1.15;
 }
 
+.leading-\[36px\] {
+  line-height: 36px;
+}
+
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-\[\#181b21\] {
@@ -871,4 +944,98 @@ video {
 .hover\:text-\[\#181b21\]:hover {
   --tw-text-opacity: 1;
   color: rgba(24, 27, 33, var(--tw-text-opacity));
+}
+
+@media (min-width: 1200px) {
+  .desktop\:flex {
+    display: flex;
+  }
+
+  .desktop\:hidden {
+    display: none;
+  }
+
+  .desktop\:h-\[54px\] {
+    height: 54px;
+  }
+
+  .desktop\:h-\[32px\] {
+    height: 32px;
+  }
+
+  .desktop\:w-\[256px\] {
+    width: 256px;
+  }
+
+  .desktop\:w-auto {
+    width: auto;
+  }
+
+  .desktop\:flex-row {
+    flex-direction: row;
+  }
+
+  .desktop\:space-x-\[25px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(25px * var(--tw-space-x-reverse));
+    margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .desktop\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .desktop\:rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .desktop\:py-\[4px\] {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .desktop\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .desktop\:pl-\[32px\] {
+    padding-left: 32px;
+  }
+
+  .desktop\:pr-\[32px\] {
+    padding-right: 32px;
+  }
+
+  .desktop\:pb-\[55px\] {
+    padding-bottom: 55px;
+  }
+
+  .desktop\:pt-\[calc\(13vh\+20px\)\] {
+    padding-top: calc(13vh + 20px);
+  }
+
+  .desktop\:text-\[14px\] {
+    font-size: 14px;
+  }
+
+  .desktop\:text-\[42px\] {
+    font-size: 42px;
+  }
+
+  .desktop\:leading-\[1\.15\] {
+    line-height: 1.15;
+  }
+
+  .desktop\:tracking-wider {
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (orientation: portrait) {
+  .portrait\:bg-mobile-model-3 {
+    background-image: url('/img/mobile-m3.jpeg');
+  }
 }
