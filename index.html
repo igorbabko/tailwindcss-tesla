@@ -7,7 +7,7 @@
   <title>Tailwind CSS - Tesla</title>
   <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="flex flex-col items-center h-screen bg-center bg-cover bg-no-repeat portrait:bg-mobile-model-3 bg-model-3">
+<body>
   <header class="flex justify-between fixed inset-0 h-[60px] desktop:h-[54px]">
     <div class="flex items-center pl-[8px] tablet:pl-[16px] desktop:pl-[32px] w-[245px]">
       <a href="#" class="inline-block pr-[8px] pl-[16px]">
@@ -97,7 +97,61 @@
     </ul>
   </header>
   <div class="flex flex-col h-screen justify-between pt-[16vh] desktop:pt-[calc(13vh+20px)]
-                pb-[120px] tablet:pb-[40px] tablet:portrait:pb-[78px] desktop:pb-[55px] w-full tablet:w-auto">
+                pb-[110px] tablet:pb-[70px] tablet:portrait:pb-[90px] w-full tablet:w-auto
+                bg-center bg-cover bg-no-repeat portrait:bg-mobile-model-s bg-model-s">
+    <div class="text-center">
+      <h1 class="font-medium tracking-wide tablet:tracking-wider leading-[36px] tablet:leading-[1.15] text-[#393c41]
+      text-[36px] tablet:text-[40px] desktop:text-[42px] py-[4px]">
+        Model S
+      </h1>
+      <h2 class="font-light tracking-wide desktop:tracking-wider text-[#5c5d61] text-[14px] pb-[8px]">
+        Order Online for
+        <a href="#" class="transition border-b hover:border-b-2 border-[#5c5d61] hover:border-[#181b21] hover:text-[#181b21]">
+          Touchless Delivery
+        </a>
+      </h2>
+    </div>
+    <div class="flex flex-col tablet:flex-row justify-center items-center space-y-[16px] tablet:space-y-0 my-[16px] px-[20px] relative">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-full tablet:w-[256px] h-[40px]">
+        Custom Order
+      </a>
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-full tablet:w-[256px] h-[40px]
+      tablet:ml-[25px]">
+        Existing Inventory
+      </a>
+      <svg class="w-[38px] text-[#181b21] absolute bottom-[-70px] animate-bounce" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+    </div>
+  </div>
+  <div class="flex flex-col h-screen justify-between pt-[16vh] desktop:pt-[calc(13vh+20px)]
+                pb-[100px] tablet:pb-[60px] tablet:portrait:pb-[78px] desktop:pb-[55px] w-full tablet:w-auto
+                bg-center bg-cover bg-no-repeat portrait:bg-mobile-model-y bg-model-y">
+    <div class="text-center">
+      <h1 class="font-medium tracking-wide tablet:tracking-wider leading-[36px] tablet:leading-[1.15] text-[#393c41]
+      text-[36px] tablet:text-[40px] desktop:text-[42px] py-[4px]">
+        Model Y
+      </h1>
+      <h2 class="font-light tracking-wide desktop:tracking-wider text-[#5c5d61] text-[14px] pb-[8px]">
+        Order Online for
+        <a href="#" class="transition border-b hover:border-b-2 border-[#5c5d61] hover:border-[#181b21] hover:text-[#181b21]">
+          Touchless Delivery
+        </a>
+      </h2>
+    </div>
+    <div class="flex flex-col tablet:flex-row justify-center items-center space-y-[16px] tablet:space-y-0 my-[16px] px-[20px]">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-full tablet:w-[256px] h-[40px]">
+        Custom Order
+      </a>
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-full tablet:w-[256px] h-[40px]
+      tablet:ml-[25px]">
+        Existing Inventory
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col h-screen justify-between pt-[16vh] desktop:pt-[calc(13vh+20px)]
+                pb-[100px] tablet:pb-[60px] tablet:portrait:pb-[78px] desktop:pb-[55px] w-full tablet:w-auto
+                bg-center bg-cover bg-no-repeat portrait:bg-mobile-model-3 bg-model-3">
     <div class="text-center">
       <h1 class="font-medium tracking-wide tablet:tracking-wider leading-[36px] tablet:leading-[1.15] text-[#393c41]
       text-[36px] tablet:text-[40px] desktop:text-[42px] py-[4px]">
@@ -110,13 +164,97 @@
         </a>
       </h2>
     </div>
-    <div class="flex flex-col tablet:flex-row justify-center items-center tablet:space-x-[25px] space-y-[16px]
-                tablet:space-y-0 my-[16px] px-[20px]">
+    <div class="flex flex-col tablet:flex-row justify-center items-center space-y-[16px] tablet:space-y-0 my-[16px] px-[20px]">
       <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-full tablet:w-[256px] h-[40px]">
         Custom Order
       </a>
-      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-full tablet:w-[256px] h-[40px]">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-full tablet:w-[256px] h-[40px]
+      tablet:ml-[25px]">
         Existing Inventory
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col h-screen justify-between pt-[16vh] desktop:pt-[calc(13vh+20px)]
+                pb-[100px] tablet:pb-[60px] tablet:portrait:pb-[78px] desktop:pb-[55px] w-full tablet:w-auto
+                bg-center bg-cover bg-no-repeat portrait:bg-mobile-model-x bg-model-x">
+    <div class="text-center">
+      <h1 class="font-medium tracking-wide tablet:tracking-wider leading-[36px] tablet:leading-[1.15] text-[#393c41]
+      text-[36px] tablet:text-[40px] desktop:text-[42px] py-[4px]">
+        Model X
+      </h1>
+      <h2 class="font-light tracking-wide desktop:tracking-wider text-[#5c5d61] text-[14px] pb-[8px]">
+        Order Online for
+        <a href="#" class="transition border-b hover:border-b-2 border-[#5c5d61] hover:border-[#181b21] hover:text-[#181b21]">
+          Touchless Delivery
+        </a>
+      </h2>
+    </div>
+    <div class="flex flex-col tablet:flex-row justify-center items-center space-y-[16px] tablet:space-y-0 my-[16px] px-[20px]">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-full tablet:w-[256px] h-[40px]">
+        Custom Order
+      </a>
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-full tablet:w-[256px] h-[40px]
+      tablet:ml-[25px]">
+        Existing Inventory
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col h-screen justify-between pt-[16vh] desktop:pt-[calc(13vh+20px)]
+                pb-[100px] tablet:pb-[60px] tablet:portrait:pb-[78px] desktop:pb-[55px] w-full tablet:w-auto
+                bg-center bg-cover bg-no-repeat portrait:bg-mobile-solar-panels bg-solar-panels">
+    <div class="text-center">
+      <h1 class="font-medium tracking-wide tablet:tracking-wider leading-[36px] tablet:leading-[1.15] text-[#393c41]
+      text-[36px] tablet:text-[40px] desktop:text-[42px] py-[4px]">
+        Solar Panels
+      </h1>
+      <h2 class="font-light tracking-wide desktop:tracking-wider text-[#5c5d61] text-[14px] pb-[8px]">
+        Lowest Cost Solar Panels in America
+      </h2>
+    </div>
+    <div class="flex flex-col tablet:flex-row justify-center items-center space-y-[16px] tablet:space-y-0 my-[16px] px-[20px]">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-full tablet:w-[256px] h-[40px]">
+        Order Now
+      </a>
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-full tablet:w-[256px] h-[40px]
+      tablet:ml-[25px]">
+        Learn More
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col h-screen justify-between pt-[16vh] desktop:pt-[calc(13vh+20px)]
+                pb-[100px] tablet:pb-[60px] tablet:portrait:pb-[78px] desktop:pb-[55px] w-full tablet:w-auto
+                bg-center bg-cover bg-no-repeat portrait:bg-mobile-solar-roof bg-solar-roof">
+    <div class="text-center">
+      <h1 class="font-medium tracking-wide tablet:tracking-wider leading-[36px] tablet:leading-[1.15] text-[#393c41]
+      text-[36px] tablet:text-[40px] desktop:text-[42px] py-[4px]">
+        Solar Roof
+      </h1>
+      <h2 class="font-light tracking-wide desktop:tracking-wider text-[#5c5d61] text-[14px] pb-[8px]">
+        Produce Clean Energy From Your Roof
+      </h2>
+    </div>
+    <div class="flex flex-col tablet:flex-row justify-center items-center space-y-[16px] tablet:space-y-0 my-[16px] px-[20px]">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-full tablet:w-[256px] h-[40px]">
+        Order Now
+      </a>
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center tracking-wider font-medium uppercase flex justify-center items-center bg-white bg-opacity-[65%] text-[12px] text-[#393c41] w-full tablet:w-[256px] h-[40px]
+      tablet:ml-[25px]">
+        Learn More
+      </a>
+    </div>
+  </div>
+  <div class="flex flex-col h-screen justify-between pt-[16vh] desktop:pt-[calc(13vh+20px)]
+                pb-[120px] tablet:pb-[110px] tablet:portrait:pb-[120px] w-full tablet:w-auto
+                bg-center bg-cover bg-no-repeat portrait:bg-mobile-accessories bg-accessories">
+    <div class="text-center">
+      <h1 class="font-medium tracking-wide tablet:tracking-wider leading-[36px] tablet:leading-[1.15] text-[#393c41]
+      text-[36px] tablet:text-[40px] desktop:text-[42px] py-[4px]">
+        Accessories
+      </h1>
+    </div>
+    <div class="flex flex-col tablet:flex-row justify-center items-center my-[16px] px-[20px]">
+      <a href="#" class="inline-block rounded-full desktop:rounded-2xl text-center text-white tracking-wider font-medium uppercase flex justify-center items-center bg-opacity-80 bg-[#181a1f] text-[12px] w-full tablet:w-[256px] h-[40px]">
+        Shop Now
       </a>
     </div>
   </div>

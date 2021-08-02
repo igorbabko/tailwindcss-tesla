@@ -619,11 +619,23 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .inset-0 {
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.bottom-\[-70px\] {
+  bottom: -70px;
 }
 
 .m-\[8px\] {
@@ -676,6 +688,10 @@ video {
   height: 40px;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-\[245px\] {
   width: 245px;
 }
@@ -686,6 +702,47 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[38px\] {
+  width: 38px;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
 }
 
 .flex-col {
@@ -755,7 +812,31 @@ video {
 }
 
 .bg-model-3 {
-  background-image: url('/img/m3.jpeg');
+  background-image: url('/img/model-3.jpeg');
+}
+
+.bg-model-s {
+  background-image: url('/img/model-s.jpeg');
+}
+
+.bg-model-y {
+  background-image: url('/img/model-y.jpeg');
+}
+
+.bg-accessories {
+  background-image: url('/img/accessories.jpeg');
+}
+
+.bg-solar-roof {
+  background-image: url('/img/solar-roof.jpeg');
+}
+
+.bg-solar-panels {
+  background-image: url('/img/solar-panels.jpeg');
+}
+
+.bg-model-x {
+  background-image: url('/img/model-x.jpeg');
 }
 
 .bg-cover {
@@ -813,6 +894,14 @@ video {
   padding-bottom: 8px;
 }
 
+.pb-\[110px\] {
+  padding-bottom: 110px;
+}
+
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -841,12 +930,12 @@ video {
   text-transform: uppercase;
 }
 
-.leading-\[36px\] {
-  line-height: 36px;
-}
-
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-\[36px\] {
+  line-height: 36px;
 }
 
 .tracking-wider {
@@ -913,6 +1002,10 @@ video {
 }
 
 @media (min-width: 600px) {
+  .tablet\:ml-\[25px\] {
+    margin-left: 25px;
+  }
+
   .tablet\:h-\[32px\] {
     height: 32px;
   }
@@ -958,6 +1051,18 @@ video {
     padding-bottom: 40px;
   }
 
+  .tablet\:pb-\[70px\] {
+    padding-bottom: 70px;
+  }
+
+  .tablet\:pb-\[60px\] {
+    padding-bottom: 60px;
+  }
+
+  .tablet\:pb-\[110px\] {
+    padding-bottom: 110px;
+  }
+
   .tablet\:text-\[13px\] {
     font-size: 13px;
   }
@@ -992,46 +1097,8 @@ video {
     height: 54px;
   }
 
-  .desktop\:h-\[32px\] {
-    height: 32px;
-  }
-
-  .desktop\:w-auto {
-    width: auto;
-  }
-
-  .desktop\:w-\[256px\] {
-    width: 256px;
-  }
-
-  .desktop\:flex-row {
-    flex-direction: row;
-  }
-
-  .desktop\:space-x-\[25px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(25px * var(--tw-space-x-reverse));
-    margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .desktop\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
   .desktop\:rounded-2xl {
     border-radius: 1rem;
-  }
-
-  .desktop\:py-\[4px\] {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .desktop\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .desktop\:pl-\[32px\] {
@@ -1046,16 +1113,12 @@ video {
     padding-bottom: 55px;
   }
 
-  .desktop\:text-\[14px\] {
-    font-size: 14px;
+  .desktop\:pb-\[70px\] {
+    padding-bottom: 70px;
   }
 
   .desktop\:text-\[42px\] {
     font-size: 42px;
-  }
-
-  .desktop\:leading-\[1\.15\] {
-    line-height: 1.15;
   }
 
   .desktop\:tracking-wider {
@@ -1065,7 +1128,31 @@ video {
 
 @media (orientation: portrait) {
   .portrait\:bg-mobile-model-3 {
-    background-image: url('/img/mobile-m3.jpeg');
+    background-image: url('/img/mobile-model-3.jpeg');
+  }
+
+  .portrait\:bg-mobile-model-s {
+    background-image: url('/img/mobile-model-s.jpeg');
+  }
+
+  .portrait\:bg-mobile-model-y {
+    background-image: url('/img/mobile-model-y.jpeg');
+  }
+
+  .portrait\:bg-mobile-accessories {
+    background-image: url('/img/mobile-accessories.jpeg');
+  }
+
+  .portrait\:bg-mobile-solar-roof {
+    background-image: url('/img/mobile-solar-roof.jpeg');
+  }
+
+  .portrait\:bg-mobile-solar-panels {
+    background-image: url('/img/mobile-solar-panels.jpeg');
+  }
+
+  .portrait\:bg-mobile-model-x {
+    background-image: url('/img/mobile-model-x.jpeg');
   }
 }
 
@@ -1073,6 +1160,18 @@ video {
   @media (orientation: portrait) {
     .tablet\:portrait\:pb-\[78px\] {
       padding-bottom: 78px;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .tablet\:portrait\:pb-\[90px\] {
+      padding-bottom: 90px;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .tablet\:portrait\:pb-\[120px\] {
+      padding-bottom: 120px;
     }
   }
 }
