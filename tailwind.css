@@ -638,6 +638,14 @@ video {
   bottom: -70px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-\[8px\] {
   margin: 8px;
 }
@@ -664,10 +672,6 @@ video {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-\[60px\] {
   height: 60px;
 }
@@ -684,12 +688,16 @@ video {
   height: 28px;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-\[40px\] {
   height: 40px;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-\[70px\] {
+  height: 70px;
 }
 
 .w-\[245px\] {
@@ -702,10 +710,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .w-\[38px\] {
@@ -811,10 +815,6 @@ video {
   --tw-bg-opacity: 65%;
 }
 
-.bg-model-3 {
-  background-image: url('/img/model-3.jpeg');
-}
-
 .bg-model-s {
   background-image: url('/img/model-s.jpeg');
 }
@@ -823,20 +823,24 @@ video {
   background-image: url('/img/model-y.jpeg');
 }
 
-.bg-accessories {
-  background-image: url('/img/accessories.jpeg');
+.bg-model-3 {
+  background-image: url('/img/model-3.jpeg');
 }
 
-.bg-solar-roof {
-  background-image: url('/img/solar-roof.jpeg');
+.bg-model-x {
+  background-image: url('/img/model-x.jpeg');
 }
 
 .bg-solar-panels {
   background-image: url('/img/solar-panels.jpeg');
 }
 
-.bg-model-x {
-  background-image: url('/img/model-x.jpeg');
+.bg-solar-roof {
+  background-image: url('/img/solar-roof.jpeg');
+}
+
+.bg-accessories {
+  background-image: url('/img/accessories.jpeg');
 }
 
 .bg-cover {
@@ -886,20 +890,28 @@ video {
   padding-top: 16vh;
 }
 
-.pb-\[120px\] {
-  padding-bottom: 120px;
+.pb-\[110px\] {
+  padding-bottom: 110px;
 }
 
 .pb-\[8px\] {
   padding-bottom: 8px;
 }
 
-.pb-\[110px\] {
-  padding-bottom: 110px;
-}
-
 .pb-\[100px\] {
   padding-bottom: 100px;
+}
+
+.pb-\[120px\] {
+  padding-bottom: 120px;
+}
+
+.pb-\[7px\] {
+  padding-bottom: 7px;
+}
+
+.pb-\[4px\] {
+  padding-bottom: 4px;
 }
 
 .text-center {
@@ -1006,6 +1018,10 @@ video {
     margin-left: 25px;
   }
 
+  .tablet\:inline {
+    display: inline;
+  }
+
   .tablet\:h-\[32px\] {
     height: 32px;
   }
@@ -1022,21 +1038,30 @@ video {
     flex-direction: row;
   }
 
-  .tablet\:space-x-\[25px\] > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(25px * var(--tw-space-x-reverse));
-    margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .tablet\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .tablet\:space-x-\[14px\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(14px * var(--tw-space-x-reverse));
+    margin-left: calc(14px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .tablet\:bg-opacity-100 {
+    --tw-bg-opacity: 1;
+  }
+
   .tablet\:py-\[4px\] {
     padding-top: 4px;
     padding-bottom: 4px;
+  }
+
+  .tablet\:py-\[8px\] {
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .tablet\:pl-\[16px\] {
@@ -1045,10 +1070,6 @@ video {
 
   .tablet\:pr-\[16px\] {
     padding-right: 16px;
-  }
-
-  .tablet\:pb-\[40px\] {
-    padding-bottom: 40px;
   }
 
   .tablet\:pb-\[70px\] {
@@ -1061,6 +1082,10 @@ video {
 
   .tablet\:pb-\[110px\] {
     padding-bottom: 110px;
+  }
+
+  .tablet\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .tablet\:text-\[13px\] {
@@ -1113,10 +1138,6 @@ video {
     padding-bottom: 55px;
   }
 
-  .desktop\:pb-\[70px\] {
-    padding-bottom: 70px;
-  }
-
   .desktop\:text-\[42px\] {
     font-size: 42px;
   }
@@ -1127,10 +1148,6 @@ video {
 }
 
 @media (orientation: portrait) {
-  .portrait\:bg-mobile-model-3 {
-    background-image: url('/img/mobile-model-3.jpeg');
-  }
-
   .portrait\:bg-mobile-model-s {
     background-image: url('/img/mobile-model-s.jpeg');
   }
@@ -1139,33 +1156,37 @@ video {
     background-image: url('/img/mobile-model-y.jpeg');
   }
 
-  .portrait\:bg-mobile-accessories {
-    background-image: url('/img/mobile-accessories.jpeg');
+  .portrait\:bg-mobile-model-3 {
+    background-image: url('/img/mobile-model-3.jpeg');
   }
 
-  .portrait\:bg-mobile-solar-roof {
-    background-image: url('/img/mobile-solar-roof.jpeg');
+  .portrait\:bg-mobile-model-x {
+    background-image: url('/img/mobile-model-x.jpeg');
   }
 
   .portrait\:bg-mobile-solar-panels {
     background-image: url('/img/mobile-solar-panels.jpeg');
   }
 
-  .portrait\:bg-mobile-model-x {
-    background-image: url('/img/mobile-model-x.jpeg');
+  .portrait\:bg-mobile-solar-roof {
+    background-image: url('/img/mobile-solar-roof.jpeg');
+  }
+
+  .portrait\:bg-mobile-accessories {
+    background-image: url('/img/mobile-accessories.jpeg');
   }
 }
 
 @media (min-width: 600px) {
   @media (orientation: portrait) {
-    .tablet\:portrait\:pb-\[78px\] {
-      padding-bottom: 78px;
+    .tablet\:portrait\:pb-\[90px\] {
+      padding-bottom: 90px;
     }
   }
 
   @media (orientation: portrait) {
-    .tablet\:portrait\:pb-\[90px\] {
-      padding-bottom: 90px;
+    .tablet\:portrait\:pb-\[78px\] {
+      padding-bottom: 78px;
     }
   }
 
