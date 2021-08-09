@@ -8,6 +8,9 @@ module.exports = {
       'portrait': {'raw': '(orientation: portrait)'},
     },
     extend: {
+      boxShadow: {
+        border: '0 2px 0 0 #181b21'
+      },
       backgroundImage: theme => ({
         'model-s': "url('/img/model-s.jpeg')",
         'mobile-model-s': "url('/img/mobile-model-s.jpeg')",

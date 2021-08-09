@@ -642,6 +642,10 @@ video {
   bottom: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -658,6 +662,23 @@ video {
 .my-\[16px\] {
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.mx-\[4px\] {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.mr-\[4px\] {
+  margin-right: 4px;
+}
+
+.mb-\[8px\] {
+  margin-bottom: 8px;
+}
+
+.ml-\[12px\] {
+  margin-left: 12px;
 }
 
 .inline-block {
@@ -700,6 +721,18 @@ video {
   height: 70px;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-\[245px\] {
   width: 245px;
 }
@@ -714,6 +747,26 @@ video {
 
 .w-\[38px\] {
   width: 38px;
+}
+
+.w-\[311px\] {
+  width: 311px;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-\[32px\] {
+  width: 32px;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 @-webkit-keyframes bounce {
@@ -749,6 +802,10 @@ video {
           animation: bounce 1s infinite;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -769,6 +826,14 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(16px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(16px * var(--tw-space-y-reverse));
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-stretch {
+  align-self: stretch;
 }
 
 .rounded-xl {
@@ -801,6 +866,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
+  background-color: rgba(0,0,0,0.3);
 }
 
 .bg-opacity-40 {
@@ -855,6 +924,10 @@ video {
   background-repeat: no-repeat;
 }
 
+.p-\[24px\] {
+  padding: 24px;
+}
+
 .px-\[8px\] {
   padding-left: 8px;
   padding-right: 8px;
@@ -868,6 +941,21 @@ video {
 .px-\[20px\] {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.px-\[32px\] {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.py-\[8px\] {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.px-\[12px\] {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .pl-\[8px\] {
@@ -930,6 +1018,10 @@ video {
   font-size: 36px;
 }
 
+.text-\[15px\] {
+  font-size: 15px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -948,6 +1040,10 @@ video {
 
 .leading-\[36px\] {
   line-height: 36px;
+}
+
+.leading-\[20px\] {
+  line-height: 20px;
 }
 
 .tracking-wider {
@@ -978,6 +1074,17 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-filter);
+          backdrop-filter: var(--tw-backdrop-filter);
+}
+
 .transition {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -988,6 +1095,10 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-\[0\.33s\] {
+  transition-duration: 0.33s;
 }
 
 .hover\:border-b-2:hover {
@@ -1004,6 +1115,16 @@ video {
   background-color: rgba(115, 150, 173, var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#f5f5f5\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#f2f2f2\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(242, 242, 242, var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-40:hover {
   --tw-bg-opacity: 0.4;
 }
@@ -1011,6 +1132,11 @@ video {
 .hover\:text-\[\#181b21\]:hover {
   --tw-text-opacity: 1;
   color: rgba(24, 27, 33, var(--tw-text-opacity));
+}
+
+.hover\:shadow-border:hover {
+  --tw-shadow: 0 2px 0 0 #181b21;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 600px) {
@@ -1120,10 +1246,6 @@ video {
 
   .desktop\:h-\[54px\] {
     height: 54px;
-  }
-
-  .desktop\:rounded-2xl {
-    border-radius: 1rem;
   }
 
   .desktop\:pl-\[32px\] {
